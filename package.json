@@ -1,0 +1,23 @@
+{
+  "name": "simple-padding",
+  "version": "1.0.0",
+  "description": "Simple padding function for Node.js",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+	"mocha": "^8.2.1"
+  },
+  "scripts": {
+	"test": "mocha"
+  },
+  "repository": {
+	"type": "git",
+	"url": "git+https://github.com/usuket/padding.git"
+  },
+  "author": "usuket",
+  "license": "MIT",
+  "bugs": {
+	"url": "https://github.com/usuket/simple-padding/issues"
+  },
+  "homepage": "https://github.com/usuket/simple-padding#readme"
+}
