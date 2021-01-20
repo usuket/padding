@@ -71,8 +71,9 @@ try {
 git tag -a v1.0.0 -m "v1.0.0"
 git push origin tags/v1.0.0
 git tag
+npm publish --access public .
 ```
 
 ## Update
-
-npm version patch npm publish ./ 
+npm version patch
+npm publish ./ 
