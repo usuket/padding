@@ -59,3 +59,14 @@ try {
 - npm test
 - npm test -- --watch
 - Please create PR or Issue.
+
+## Publish
+```
+git tag -a v1.0.0 -m "v1.0.0"
+git push origin tags/v1.0.0
+git tag
+```
+
+## Update
+npm version patch
+npm publish ./ 
