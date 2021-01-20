@@ -2,6 +2,7 @@
 
 Nothing more than simple padding function for Node.js  
 It created by personal demand for reusing function for common use-case.
+
 ## Install
 
 ``npm install --save simple-padding``
@@ -11,22 +12,26 @@ It created by personal demand for reusing function for common use-case.
 ```javascript
 const padding = require("simple-padding")
 
-// 0000000001
+// "0000000001"
 console.info(padding(1, 10))
 
-// aaaaaaa100
+// "0000000abc"
+console.info(padding("abc", 10))
+
+// "aaaaaaa100"
 console.info(padding(100, 10, "a"))
 
-// 000000-100
+// "000000-100"
 console.info(padding(-100, 10, "0"))
 
-// 1000000000
+// "1000000000"
 console.info(padding(1_000_000_000, 10))
 
 // And you can take a look into various usecase in example.js ...
 ```
 
 ## Interface
+
 ```javascript
 /**
  *
@@ -61,6 +66,7 @@ try {
 - Please create PR or Issue.
 
 ## Publish
+
 ```
 git tag -a v1.0.0 -m "v1.0.0"
 git push origin tags/v1.0.0
@@ -68,5 +74,5 @@ git tag
 ```
 
 ## Update
-npm version patch
-npm publish ./ 
+
+npm version patch npm publish ./ 
