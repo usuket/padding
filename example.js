@@ -1,7 +1,12 @@
+/**
+ * Use ./index for internal test.
+ * It will be below in actual use-case.
+ * const padding = require("simple-padding")
+ */
 const padding = require("./index")
 
-// 0000000000
-console.info(padding(0, 10))
+// 0000000001
+console.info(padding(1, 10))
 
 // aaaaaaa100
 console.info(padding(100, 10, "a"))
