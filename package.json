@@ -1,6 +1,6 @@
 {
  "name": "simple-padding",
- "version": "1.0.1",
+ "version": "1.0.2",
  "description": "Simple padding function for Node.js",
  "keywords": [
   "padding",
