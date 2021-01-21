@@ -49,7 +49,7 @@ describe('padding', function () {
 			padding("aaa", NaN)
 		}, Error)
 		assert.throws(function () {
-			padding(10_000_000_000, 10)
+			padding(10000000000, 10)
 		}, Error)
 		assert.throws(function () {
 			padding(null, 10)
