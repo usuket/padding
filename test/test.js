@@ -6,6 +6,7 @@ describe('padding', function () {
 		assert.equal(padding(100, 10, "a"), "aaaaaaa100")
 		assert.equal(padding(-100, 10, "0"), "000000-100")
 		assert.equal(padding(1_000_000_000, 10), "1000000000")
+		assert.equal(padding(2147483647, 11), "02147483647")
 		assert.equal(padding("aaa", 10), "0000000aaa")
 	});
 

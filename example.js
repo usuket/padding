@@ -5,31 +5,34 @@
  */
 const padding = require("./index")
 
-// 0000000001
+// "0000000001"
 console.info(padding(1, 10))
 
-// aaaaaaa100
+// "      0.01"
+console.info(padding(0.01, 10, " "))
+
+// "aaaaaaa100"
 console.info(padding(100, 10, "a"))
 
-// 000000-100
+// "000000-100"
 console.info(padding(-100, 10, "0"))
 
-// 1000000000
-console.info(padding(1_000_000_000, 10))
+// "02147483647"
+console.info(padding(2147483647, 11))
 
-// 0000000aaa
+// "0000000aaa"
 console.info(padding("aaa", 10))
 
 // "       100"
 console.info(padding("100", 10, " "))
 
-// -------100
+// "-------100"
 console.info(padding("100", 10, "-"))
 
-// 0000000999
+// "0000000999"
 console.info(padding("999", 10, "0"))
 
-// +|+|+|-100
+// "+|+|+|-100"
 console.info(padding(-100, 10, "+|"))
 
 // ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789
@@ -38,10 +41,10 @@ console.info(padding("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz012345
 // "       cdf"
 console.info(padding("cdf", 10, " "))
 
-// 0000マルチバイト
+// "0000マルチバイト"
 console.info(padding("マルチバイト", 10))
 
-// 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000999999999999999
+// "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000999999999999999"
 console.info(padding("999999999999999", 100, "0"))
 
 /*

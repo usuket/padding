@@ -13,19 +13,22 @@ It created by personal demand for reusing function for common use-case.
 const padding = require("simple-padding")
 
 // "0000000001"
-console.info(padding(1, 10))
+var integerPaddingBy0 = padding(1, 10)
+
+// "      0.01"
+var floatNum = padding(0.01, 10, " ")
 
 // "0000000abc"
-console.info(padding("abc", 10))
+var defaultPaddingBy0 = padding("abc", 10)
 
 // "aaaaaaa100"
-console.info(padding(100, 10, "a"))
+var charPadding = padding(100, 10, "a")
 
 // "000000-100"
-console.info(padding(-100, 10, "0"))
+var minusInt = padding(-100, 10, "0")
 
-// "1000000000"
-console.info(padding(1_000_000_000, 10))
+// "02147483647"
+var intMaxPlusPad = padding(2147483647, 11)
 
 // And you can take a look into various usecase in example.js ...
 ```
@@ -75,5 +78,5 @@ npm publish --access public .
 ```
 
 ## Update
-npm version patch
-npm publish ./ 
+
+npm version patch npm publish ./ 
