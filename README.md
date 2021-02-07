@@ -1,3 +1,6 @@
+![Node.js CI](https://github.com/usuket/simple-padding/workflows/Node.js%20CI/badge.svg?branch=main)
+[![npm version](https://badge.fury.io/js/simple-padding.svg)](https://badge.fury.io/js/simple-padding)
+
 # Simple padding lib for nodejs
 
 Nothing more than simple padding function for Node.js  
