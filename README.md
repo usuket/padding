@@ -10,25 +10,31 @@ It created by personal demand for reusing function for common use-case.
 ## Usage
 
 ```javascript
-const padding = require("simple-padding")
+var simplePadding = require("simple-padding")
 
 // "0000000001"
-var integerPaddingBy0 = padding(1, 10)
+var integerPaddingBy0 = simplePadding(1, 10)
+console.info(integerPaddingBy0)
 
 // "      0.01"
-var floatNum = padding(0.01, 10, " ")
+var floatNum = simplePadding(0.01, 10, " ")
+console.info(floatNum)
 
 // "0000000abc"
-var defaultPaddingBy0 = padding("abc", 10)
+var defaultPaddingBy0 = simplePadding("abc", 10)
+console.info(defaultPaddingBy0)
 
 // "aaaaaaa100"
-var charPadding = padding(100, 10, "a")
+var charPadding = simplePadding(100, 10, "a")
+console.info(charPadding)
 
 // "000000-100"
-var minusInt = padding(-100, 10, "0")
+var minusInt = simplePadding(-100, 10, "0")
+console.info(minusInt)
 
 // "02147483647"
-var intMaxPlusPad = padding(2147483647, 11)
+var intMaxPlusPad = simplePadding(2147483647, 11)
+console.info(intMaxPlusPad)
 
 // And you can take a look into various usecase in example.js ...
 ```
@@ -53,9 +59,9 @@ function padding(value, length, char) {
 ```javascript
 try {
     // Missing char
-    padding("abc", 10, "")
+    simplePadding("abc", 10, "")
     // Invalid 2nd param (padded length)
-    padding("aaa", 0)
+    simplePadding("aaa", 0)
     // etc ..
 } catch (e) {
     console.error(e);
